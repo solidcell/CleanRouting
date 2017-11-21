@@ -7,19 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8848109C1FB76736000BA2F3 /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848109B1FB76736000BA2F3 /* OnboardingInteractor.swift */; };
+		8848109E1FB7691E000BA2F3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848109D1FB7691E000BA2F3 /* UIColor.swift */; };
 		8852B43E1FB70B87000EF8D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B43D1FB70B87000EF8D3 /* AppDelegate.swift */; };
-		8852B4401FB70B87000EF8D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B43F1FB70B87000EF8D3 /* ViewController.swift */; };
+		8852B4401FB70B87000EF8D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B43F1FB70B87000EF8D3 /* LoginViewController.swift */; };
 		8852B4451FB70B87000EF8D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8852B4441FB70B87000EF8D3 /* Assets.xcassets */; };
 		8852B4481FB70B87000EF8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8852B4461FB70B87000EF8D3 /* LaunchScreen.storyboard */; };
+		8852B4541FB711BA000EF8D3 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B4531FB711BA000EF8D3 /* LoginInteractor.swift */; };
+		8852B4571FB713BF000EF8D3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B4561FB713BF000EF8D3 /* MapViewController.swift */; };
+		8852B4591FB7141F000EF8D3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B4581FB7141F000EF8D3 /* AppCoordinator.swift */; };
+		8852B45C1FB76524000EF8D3 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B45B1FB76524000EF8D3 /* OnboardingViewController.swift */; };
+		88A9324D1FC1C7040002B05C /* FauxLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9324C1FC1C7040002B05C /* FauxLaunchScreen.swift */; };
+		88A932521FC1CB730002B05C /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A932511FC1CB730002B05C /* OnboardingCoordinator.swift */; };
+		88A932541FC1EB6E0002B05C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A932531FC1EB6E0002B05C /* LoginCoordinator.swift */; };
+		88A9325B1FC20BBE0002B05C /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9325A1FC20BBE0002B05C /* SignupCoordinator.swift */; };
+		88A932601FC20F130002B05C /* SignupCredentialsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9325F1FC20F130002B05C /* SignupCredentialsCoordinator.swift */; };
+		88A932621FC20F5F0002B05C /* SignupCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A932611FC20F5F0002B05C /* SignupCredentialsViewController.swift */; };
+		88A932641FC212640002B05C /* SignupCredentialsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A932631FC212640002B05C /* SignupCredentialsInteractor.swift */; };
+		88A932671FC216050002B05C /* SignupPaymentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A932661FC216050002B05C /* SignupPaymentCoordinator.swift */; };
+		88A932691FC2169C0002B05C /* SignupPaymentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A932681FC2169C0002B05C /* SignupPaymentInteractor.swift */; };
+		88A9326B1FC216A50002B05C /* SignupPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9326A1FC216A50002B05C /* SignupPaymentViewController.swift */; };
+		88A9326E1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9326D1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8848109B1FB76736000BA2F3 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		8848109D1FB7691E000BA2F3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		8852B43A1FB70B87000EF8D3 /* CleanRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8852B43D1FB70B87000EF8D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8852B43F1FB70B87000EF8D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8852B43F1FB70B87000EF8D3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8852B4441FB70B87000EF8D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8852B4471FB70B87000EF8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8852B4491FB70B87000EF8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8852B4531FB711BA000EF8D3 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		8852B4561FB713BF000EF8D3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8852B4581FB7141F000EF8D3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8852B45B1FB76524000EF8D3 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		88A9324C1FC1C7040002B05C /* FauxLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FauxLaunchScreen.swift; sourceTree = "<group>"; };
+		88A932511FC1CB730002B05C /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		88A932531FC1EB6E0002B05C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		88A9325A1FC20BBE0002B05C /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		88A9325F1FC20F130002B05C /* SignupCredentialsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCredentialsCoordinator.swift; sourceTree = "<group>"; };
+		88A932611FC20F5F0002B05C /* SignupCredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCredentialsViewController.swift; sourceTree = "<group>"; };
+		88A932631FC212640002B05C /* SignupCredentialsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCredentialsInteractor.swift; sourceTree = "<group>"; };
+		88A932661FC216050002B05C /* SignupPaymentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentCoordinator.swift; sourceTree = "<group>"; };
+		88A932681FC2169C0002B05C /* SignupPaymentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentInteractor.swift; sourceTree = "<group>"; };
+		88A9326A1FC216A50002B05C /* SignupPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentViewController.swift; sourceTree = "<group>"; };
+		88A9326D1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailReminderCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8848109F1FB76922000BA2F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8848109D1FB7691E000BA2F3 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8852B4311FB70B87000EF8D3 = {
 			isa = PBXGroup;
 			children = (
@@ -53,12 +95,109 @@
 			isa = PBXGroup;
 			children = (
 				8852B43D1FB70B87000EF8D3 /* AppDelegate.swift */,
-				8852B43F1FB70B87000EF8D3 /* ViewController.swift */,
+				8852B4581FB7141F000EF8D3 /* AppCoordinator.swift */,
+				8852B4521FB710D1000EF8D3 /* Modules */,
+				88A932571FC1F5160002B05C /* Utilities */,
+				8848109F1FB76922000BA2F3 /* Extensions */,
+				88A932581FC1F54B0002B05C /* Supporting Files */,
+			);
+			path = CleanRouting;
+			sourceTree = "<group>";
+		};
+		8852B4511FB710C6000EF8D3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				88A932531FC1EB6E0002B05C /* LoginCoordinator.swift */,
+				8852B4531FB711BA000EF8D3 /* LoginInteractor.swift */,
+				8852B43F1FB70B87000EF8D3 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8852B4521FB710D1000EF8D3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8852B45A1FB76516000EF8D3 /* Onboarding */,
+				88A932591FC20B950002B05C /* Signup */,
+				88A9325E1FC20EE40002B05C /* SignupCredentials */,
+				88A932651FC215EA0002B05C /* SignupPayment */,
+				88A9326C1FC21D000002B05C /* ConfirmEmailReminder */,
+				8852B4511FB710C6000EF8D3 /* Login */,
+				8852B4551FB713AA000EF8D3 /* Map */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8852B4551FB713AA000EF8D3 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8852B4561FB713BF000EF8D3 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8852B45A1FB76516000EF8D3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				88A932511FC1CB730002B05C /* OnboardingCoordinator.swift */,
+				8848109B1FB76736000BA2F3 /* OnboardingInteractor.swift */,
+				8852B45B1FB76524000EF8D3 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		88A932571FC1F5160002B05C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				88A9324C1FC1C7040002B05C /* FauxLaunchScreen.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		88A932581FC1F54B0002B05C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				8852B4441FB70B87000EF8D3 /* Assets.xcassets */,
 				8852B4461FB70B87000EF8D3 /* LaunchScreen.storyboard */,
 				8852B4491FB70B87000EF8D3 /* Info.plist */,
 			);
-			path = CleanRouting;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88A932591FC20B950002B05C /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				88A9325A1FC20BBE0002B05C /* SignupCoordinator.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		88A9325E1FC20EE40002B05C /* SignupCredentials */ = {
+			isa = PBXGroup;
+			children = (
+				88A9325F1FC20F130002B05C /* SignupCredentialsCoordinator.swift */,
+				88A932631FC212640002B05C /* SignupCredentialsInteractor.swift */,
+				88A932611FC20F5F0002B05C /* SignupCredentialsViewController.swift */,
+			);
+			path = SignupCredentials;
+			sourceTree = "<group>";
+		};
+		88A932651FC215EA0002B05C /* SignupPayment */ = {
+			isa = PBXGroup;
+			children = (
+				88A932661FC216050002B05C /* SignupPaymentCoordinator.swift */,
+				88A932681FC2169C0002B05C /* SignupPaymentInteractor.swift */,
+				88A9326A1FC216A50002B05C /* SignupPaymentViewController.swift */,
+			);
+			path = SignupPayment;
+			sourceTree = "<group>";
+		};
+		88A9326C1FC21D000002B05C /* ConfirmEmailReminder */ = {
+			isa = PBXGroup;
+			children = (
+				88A9326D1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift */,
+			);
+			path = ConfirmEmailReminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +271,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8852B4401FB70B87000EF8D3 /* ViewController.swift in Sources */,
+				8852B4541FB711BA000EF8D3 /* LoginInteractor.swift in Sources */,
+				88A932671FC216050002B05C /* SignupPaymentCoordinator.swift in Sources */,
+				8848109C1FB76736000BA2F3 /* OnboardingInteractor.swift in Sources */,
+				8852B45C1FB76524000EF8D3 /* OnboardingViewController.swift in Sources */,
+				8852B4401FB70B87000EF8D3 /* LoginViewController.swift in Sources */,
+				88A9325B1FC20BBE0002B05C /* SignupCoordinator.swift in Sources */,
+				88A932601FC20F130002B05C /* SignupCredentialsCoordinator.swift in Sources */,
+				88A932541FC1EB6E0002B05C /* LoginCoordinator.swift in Sources */,
+				88A9324D1FC1C7040002B05C /* FauxLaunchScreen.swift in Sources */,
 				8852B43E1FB70B87000EF8D3 /* AppDelegate.swift in Sources */,
+				88A932641FC212640002B05C /* SignupCredentialsInteractor.swift in Sources */,
+				88A932621FC20F5F0002B05C /* SignupCredentialsViewController.swift in Sources */,
+				8848109E1FB7691E000BA2F3 /* UIColor.swift in Sources */,
+				88A932521FC1CB730002B05C /* OnboardingCoordinator.swift in Sources */,
+				8852B4571FB713BF000EF8D3 /* MapViewController.swift in Sources */,
+				88A9326B1FC216A50002B05C /* SignupPaymentViewController.swift in Sources */,
+				88A9326E1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift in Sources */,
+				88A932691FC2169C0002B05C /* SignupPaymentInteractor.swift in Sources */,
+				8852B4591FB7141F000EF8D3 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

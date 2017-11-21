@@ -11,10 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
-        let viewController = ViewController()
-
-        window.rootViewController = viewController
-        window.makeKeyAndVisible()
+        let appCoordinator = AppCoordinator()
+        appCoordinator.start(on: window)
 
         return true
     }
