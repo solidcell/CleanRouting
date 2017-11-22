@@ -29,6 +29,11 @@
 		88A932691FC2169C0002B05C /* SignupPaymentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A932681FC2169C0002B05C /* SignupPaymentInteractor.swift */; };
 		88A9326B1FC216A50002B05C /* SignupPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9326A1FC216A50002B05C /* SignupPaymentViewController.swift */; };
 		88A9326E1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9326D1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift */; };
+		88B00DA81FC59A7F0091B967 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DA71FC59A7F0091B967 /* MapInteractor.swift */; };
+		88B00DAA1FC59B390091B967 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DA91FC59B390091B967 /* MapCoordinator.swift */; };
+		88B00DAC1FC59CFB0091B967 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DAB1FC59CFB0091B967 /* MenuViewController.swift */; };
+		88B00DAE1FC59D2F0091B967 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DAD1FC59D2F0091B967 /* MenuCoordinator.swift */; };
+		88B00DB01FC59DED0091B967 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DAF1FC59DED0091B967 /* MenuInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		88A932681FC2169C0002B05C /* SignupPaymentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentInteractor.swift; sourceTree = "<group>"; };
 		88A9326A1FC216A50002B05C /* SignupPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPaymentViewController.swift; sourceTree = "<group>"; };
 		88A9326D1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailReminderCoordinator.swift; sourceTree = "<group>"; };
+		88B00DA71FC59A7F0091B967 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		88B00DA91FC59B390091B967 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		88B00DAB1FC59CFB0091B967 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		88B00DAD1FC59D2F0091B967 /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
+		88B00DAF1FC59DED0091B967 /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +144,7 @@
 				88A932651FC215EA0002B05C /* SignupPayment */,
 				88A9326C1FC21D000002B05C /* ConfirmEmailReminder */,
 				8852B4511FB710C6000EF8D3 /* Login */,
+				88B00DA61FC59A1F0091B967 /* Menu */,
 				8852B4551FB713AA000EF8D3 /* Map */,
 			);
 			path = Modules;
@@ -142,6 +153,8 @@
 		8852B4551FB713AA000EF8D3 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				88B00DA91FC59B390091B967 /* MapCoordinator.swift */,
+				88B00DA71FC59A7F0091B967 /* MapInteractor.swift */,
 				8852B4561FB713BF000EF8D3 /* MapViewController.swift */,
 			);
 			path = Map;
@@ -209,6 +222,16 @@
 				88A9326D1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift */,
 			);
 			path = ConfirmEmailReminder;
+			sourceTree = "<group>";
+		};
+		88B00DA61FC59A1F0091B967 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				88B00DAD1FC59D2F0091B967 /* MenuCoordinator.swift */,
+				88B00DAF1FC59DED0091B967 /* MenuInteractor.swift */,
+				88B00DAB1FC59CFB0091B967 /* MenuViewController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8852B4541FB711BA000EF8D3 /* LoginInteractor.swift in Sources */,
+				88B00DAE1FC59D2F0091B967 /* MenuCoordinator.swift in Sources */,
 				88A932671FC216050002B05C /* SignupPaymentCoordinator.swift in Sources */,
 				8801EFB01FC57672000DF1D3 /* ActionListViewController.swift in Sources */,
 				8848109C1FB76736000BA2F3 /* OnboardingInteractor.swift in Sources */,
+				88B00DB01FC59DED0091B967 /* MenuInteractor.swift in Sources */,
 				8852B45C1FB76524000EF8D3 /* OnboardingViewController.swift in Sources */,
 				8852B4401FB70B87000EF8D3 /* LoginViewController.swift in Sources */,
 				88A9325B1FC20BBE0002B05C /* SignupCoordinator.swift in Sources */,
@@ -294,6 +319,8 @@
 				88A9324D1FC1C7040002B05C /* FauxLaunchScreen.swift in Sources */,
 				8852B43E1FB70B87000EF8D3 /* AppDelegate.swift in Sources */,
 				88A932641FC212640002B05C /* SignupCredentialsInteractor.swift in Sources */,
+				88B00DA81FC59A7F0091B967 /* MapInteractor.swift in Sources */,
+				88B00DAA1FC59B390091B967 /* MapCoordinator.swift in Sources */,
 				88A932621FC20F5F0002B05C /* SignupCredentialsViewController.swift in Sources */,
 				8848109E1FB7691E000BA2F3 /* UIColor.swift in Sources */,
 				88A932521FC1CB730002B05C /* OnboardingCoordinator.swift in Sources */,
@@ -302,6 +329,7 @@
 				88A9326E1FC21D390002B05C /* ConfirmEmailReminderCoordinator.swift in Sources */,
 				88A932691FC2169C0002B05C /* SignupPaymentInteractor.swift in Sources */,
 				8852B4591FB7141F000EF8D3 /* AppCoordinator.swift in Sources */,
+				88B00DAC1FC59CFB0091B967 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

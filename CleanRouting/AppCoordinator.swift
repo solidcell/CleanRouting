@@ -2,10 +2,12 @@ import UIKit
 
 class AppCoordinator: OnboardingCoordinatorDelegate {
 
-    private let viewController = MapViewController()
+    weak var viewController: UIViewController?
 
     func start(on window: UIWindow) {
-        window.rootViewController = viewController
+        let mapViewController = MapCoordinator().start()
+        self.viewController = mapViewController
+        window.rootViewController = mapViewController
         window.makeKeyAndVisible()
         presentOnboarding()
     }
@@ -32,7 +34,7 @@ class AppCoordinator: OnboardingCoordinatorDelegate {
         let onboardingViewController = OnboardingCoordinator(delegate: self).start()
 
         DispatchQueue.main.async {
-            self.viewController.present(onboardingViewController, animated: false) {
+            self.viewController?.present(onboardingViewController, animated: false) {
                 fauxLaunchScreen.hide()
             }
         }
@@ -51,6 +53,6 @@ class AppCoordinator: OnboardingCoordinatorDelegate {
     }
 
     private func dismissOnboarding() {
-        viewController.dismiss(animated: true)
+        viewController?.dismiss(animated: true)
     }
 }
