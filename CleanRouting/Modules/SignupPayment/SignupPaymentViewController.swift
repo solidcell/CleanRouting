@@ -1,14 +1,18 @@
 import UIKit
 
-class SignupPaymentViewController: UIViewController {
+class SignupPaymentViewController: ActionListViewController {
 
     private let interactor: SignupPaymentInteractor
     private let usage: Usage
+    private static let titleText = "Signup Payment"
 
     init(interactor: SignupPaymentInteractor, usage: Usage) {
         self.interactor = interactor
         self.usage = usage
-        super.init(nibName: nil, bundle: nil)
+        let actions = [
+            Action(name: "Next", selector: #selector(didTapNext))
+        ]
+        super.init(header: SignupPaymentViewController.titleText, actions: actions)
     }
 
     enum Usage {
@@ -23,32 +27,12 @@ class SignupPaymentViewController: UIViewController {
         case .presented:
             break
         case .pushed(nextButton: let nextButton):
+            title = SignupPaymentViewController.titleText
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: nextButton,
                                                                 style: .plain,
                                                                 target: self,
                                                                 action: #selector(didTapNext))
         }
-
-        title = "Signup Payment"
-
-        view.backgroundColor = .randomGray
-
-        let titleLabel = UILabel()
-        view.addSubview(titleLabel)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 44).isActive = true
-        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        titleLabel.font = UIFont.systemFont(ofSize: 30)
-        titleLabel.textColor = .black
-        titleLabel.text = title
-
-        let nextButton = UIButton(type: .system)
-        view.addSubview(nextButton)
-        nextButton.translatesAutoresizingMaskIntoConstraints = false
-        nextButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 100).isActive = true
-        nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        nextButton.setTitle("Next", for: .normal)
-        nextButton.addTarget(self, action: #selector(didTapNext), for: .touchUpInside)
     }
 
     @objc private func didTapNext() {

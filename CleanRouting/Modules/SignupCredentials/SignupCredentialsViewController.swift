@@ -1,9 +1,10 @@
 import UIKit
 
-class SignupCredentialsViewController: UIViewController {
+class SignupCredentialsViewController: ActionListViewController {
 
-    private let interactor: SignupCredentialsInteractor
     private let usage: Usage
+    private let interactor: SignupCredentialsInteractor
+    private static let titleText = "Signup Credentials"
 
     enum Usage {
         case presented
@@ -13,7 +14,10 @@ class SignupCredentialsViewController: UIViewController {
     init(interactor: SignupCredentialsInteractor, usage: Usage) {
         self.interactor = interactor
         self.usage = usage
-        super.init(nibName: nil, bundle: nil)
+        let actions = [
+            Action(name: "Next", selector: #selector(didTapNext))
+        ]
+        super.init(header: SignupCredentialsViewController.titleText, actions: actions)
     }
 
     override func viewDidLoad() {
@@ -23,32 +27,12 @@ class SignupCredentialsViewController: UIViewController {
         case .presented:
             break
         case .pushed(nextButton: let nextButton):
+            self.title = SignupCredentialsViewController.titleText
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: nextButton,
                                                                 style: .plain,
                                                                 target: self,
                                                                 action: #selector(didTapNext))
         }
-
-        title = "Signup Credentials"
-
-        view.backgroundColor = .randomGray
-
-        let titleLabel = UILabel()
-        view.addSubview(titleLabel)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 44).isActive = true
-        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        titleLabel.font = UIFont.systemFont(ofSize: 30)
-        titleLabel.textColor = .black
-        titleLabel.text = title
-
-        let nextButton = UIButton(type: .system)
-        view.addSubview(nextButton)
-        nextButton.translatesAutoresizingMaskIntoConstraints = false
-        nextButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 100).isActive = true
-        nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        nextButton.setTitle("Next", for: .normal)
-        nextButton.addTarget(self, action: #selector(didTapNext), for: .touchUpInside)
     }
 
     @objc private func didTapNext() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8801EFB01FC57672000DF1D3 /* ActionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801EFAF1FC57672000DF1D3 /* ActionListViewController.swift */; };
 		8848109C1FB76736000BA2F3 /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848109B1FB76736000BA2F3 /* OnboardingInteractor.swift */; };
 		8848109E1FB7691E000BA2F3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848109D1FB7691E000BA2F3 /* UIColor.swift */; };
 		8852B43E1FB70B87000EF8D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852B43D1FB70B87000EF8D3 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8801EFAF1FC57672000DF1D3 /* ActionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListViewController.swift; sourceTree = "<group>"; };
 		8848109B1FB76736000BA2F3 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
 		8848109D1FB7691E000BA2F3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		8852B43A1FB70B87000EF8D3 /* CleanRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8801EFB11FC5768A000DF1D3 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8801EFAF1FC57672000DF1D3 /* ActionListViewController.swift */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
 		8848109F1FB76922000BA2F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 				8852B43D1FB70B87000EF8D3 /* AppDelegate.swift */,
 				8852B4581FB7141F000EF8D3 /* AppCoordinator.swift */,
 				8852B4521FB710D1000EF8D3 /* Modules */,
+				8801EFB11FC5768A000DF1D3 /* Base Classes */,
 				88A932571FC1F5160002B05C /* Utilities */,
 				8848109F1FB76922000BA2F3 /* Extensions */,
 				88A932581FC1F54B0002B05C /* Supporting Files */,
@@ -273,6 +284,7 @@
 			files = (
 				8852B4541FB711BA000EF8D3 /* LoginInteractor.swift in Sources */,
 				88A932671FC216050002B05C /* SignupPaymentCoordinator.swift in Sources */,
+				8801EFB01FC57672000DF1D3 /* ActionListViewController.swift in Sources */,
 				8848109C1FB76736000BA2F3 /* OnboardingInteractor.swift in Sources */,
 				8852B45C1FB76524000EF8D3 /* OnboardingViewController.swift in Sources */,
 				8852B4401FB70B87000EF8D3 /* LoginViewController.swift in Sources */,
@@ -419,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95UPW8AS32;
 				INFOPLIST_FILE = CleanRouting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.solidcell.CleanRouting;
@@ -433,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95UPW8AS32;
 				INFOPLIST_FILE = CleanRouting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.solidcell.CleanRouting;
