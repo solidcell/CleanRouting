@@ -28,6 +28,10 @@ class MapCoordinator: MenuCoordinatorDelegate {
         closeMenu()
     }
 
+    func didSignUpInMenu() {
+        closeMenu()
+    }
+
     private func closeMenu() {
         viewController?.dismiss(animated: true)
     }

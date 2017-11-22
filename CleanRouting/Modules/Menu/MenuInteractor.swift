@@ -14,4 +14,8 @@ struct MenuInteractor {
     func didTapLogIn() {
         coordinator.didTapLogIn()
     }
+
+    func didTapSignUp() {
+        coordinator.didTapSignUp()
+    }
 }

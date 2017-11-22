@@ -6,13 +6,15 @@ class MenuViewController: ActionListViewController {
 
     init(interactor: MenuInteractor, loggedIn: Bool) {
         self.interactor = interactor
-        let logInOrLogOutAction = loggedIn
-            ? Action(name: "Log Out", selector: #selector(didTapLogOut))
-            : Action(name: "Log In", selector: #selector(didTapLogIn))
+        let loggedInStateActions = loggedIn
+            ? [Action(name: "Log Out", selector: #selector(didTapLogOut))]
+            : [
+                Action(name: "Log In", selector: #selector(didTapLogIn)),
+                Action(name: "Sign Up", selector: #selector(didTapSignUp))
+              ]
         let actions = [
-            logInOrLogOutAction,
             Action(name: "Close", selector: #selector(didTapClose))
-        ]
+        ] + loggedInStateActions
         super.init(header: "Menu", actions: actions)
     }
 
@@ -26,6 +28,10 @@ class MenuViewController: ActionListViewController {
 
     @objc func didTapLogIn() {
         interactor.didTapLogIn()
+    }
+
+    @objc func didTapSignUp() {
+        interactor.didTapSignUp()
     }
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

@@ -1,6 +1,6 @@
 import UIKit
 
-class MenuCoordinator: LoginCoordinatorDelegate {
+class MenuCoordinator: LoginCoordinatorDelegate, SignupCoordinatorDelegate {
 
     private let delegate: MenuCoordinatorDelegate
     private weak var viewController: UIViewController?
@@ -29,12 +29,21 @@ class MenuCoordinator: LoginCoordinatorDelegate {
         viewController?.present(loginViewController, animated: true)
     }
 
+    func didTapSignUp() {
+        let signupViewController = SignupCoordinator(delegate: self).start()
+        viewController?.present(signupViewController, animated: true)
+    }
+
     func didLogIn() {
         delegate.didLogInInMenu()
     }
 
     func didCancelLogIn() {
         viewController?.dismiss(animated: true)
+    }
+
+    func didFinishSignup() {
+        delegate.didSignUpInMenu()
     }
 }
 
@@ -43,4 +52,5 @@ protocol MenuCoordinatorDelegate {
     func didTapCloseInMenu()
     func didTapLogOutInMenu()
     func didLogInInMenu()
+    func didSignUpInMenu()
 }
