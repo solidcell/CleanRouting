@@ -5,4 +5,13 @@ struct MenuInteractor {
     func didTapClose() {
         coordinator.didTapClose()
     }
+
+    func didTapLogOut() {
+        UserStore.loggedIn = false
+        coordinator.didTapLogOut()
+    }
+
+    func didTapLogIn() {
+        coordinator.didTapLogIn()
+    }
 }

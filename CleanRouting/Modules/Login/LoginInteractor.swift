@@ -3,6 +3,7 @@ struct LoginInteractor {
     let coordinator: LoginCoordinator
 
     func didTapLoginButton() {
+        UserStore.loggedIn = true
         coordinator.didLogIn()
     }
 

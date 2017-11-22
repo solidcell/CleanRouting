@@ -17,6 +17,18 @@ class MapCoordinator: MenuCoordinatorDelegate {
     }
 
     func didTapCloseInMenu() {
+        closeMenu()
+    }
+
+    func didTapLogOutInMenu() {
+        closeMenu()
+    }
+
+    func didLogInInMenu() {
+        closeMenu()
+    }
+
+    private func closeMenu() {
         viewController?.dismiss(animated: true)
     }
 }

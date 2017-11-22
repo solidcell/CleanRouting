@@ -34,6 +34,7 @@
 		88B00DAC1FC59CFB0091B967 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DAB1FC59CFB0091B967 /* MenuViewController.swift */; };
 		88B00DAE1FC59D2F0091B967 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DAD1FC59D2F0091B967 /* MenuCoordinator.swift */; };
 		88B00DB01FC59DED0091B967 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DAF1FC59DED0091B967 /* MenuInteractor.swift */; };
+		88B00DB31FC5AC730091B967 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B00DB21FC5AC730091B967 /* UserStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		88B00DAB1FC59CFB0091B967 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		88B00DAD1FC59D2F0091B967 /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		88B00DAF1FC59DED0091B967 /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		88B00DB21FC5AC730091B967 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				8852B43D1FB70B87000EF8D3 /* AppDelegate.swift */,
 				8852B4581FB7141F000EF8D3 /* AppCoordinator.swift */,
 				8852B4521FB710D1000EF8D3 /* Modules */,
+				88B00DB11FC5AC670091B967 /* Stores */,
 				8801EFB11FC5768A000DF1D3 /* Base Classes */,
 				88A932571FC1F5160002B05C /* Utilities */,
 				8848109F1FB76922000BA2F3 /* Extensions */,
@@ -234,6 +237,14 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		88B00DB11FC5AC670091B967 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				88B00DB21FC5AC730091B967 /* UserStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +328,7 @@
 				88A932601FC20F130002B05C /* SignupCredentialsCoordinator.swift in Sources */,
 				88A932541FC1EB6E0002B05C /* LoginCoordinator.swift in Sources */,
 				88A9324D1FC1C7040002B05C /* FauxLaunchScreen.swift in Sources */,
+				88B00DB31FC5AC730091B967 /* UserStore.swift in Sources */,
 				8852B43E1FB70B87000EF8D3 /* AppDelegate.swift in Sources */,
 				88A932641FC212640002B05C /* SignupCredentialsInteractor.swift in Sources */,
 				88B00DA81FC59A7F0091B967 /* MapInteractor.swift in Sources */,

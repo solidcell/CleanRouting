@@ -9,7 +9,9 @@ class AppCoordinator: OnboardingCoordinatorDelegate {
         self.viewController = mapViewController
         window.rootViewController = mapViewController
         window.makeKeyAndVisible()
-        presentOnboarding()
+        if !UserStore.loggedIn {
+            presentOnboarding()
+        }
     }
 
     private func presentOnboarding() {
