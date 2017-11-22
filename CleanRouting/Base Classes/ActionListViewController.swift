@@ -39,6 +39,7 @@ class ActionListViewController: UIViewController, UITableViewDelegate, UITableVi
 
         view.backgroundColor = .white
 
+        tableView.alwaysBounceVertical = false // disable scrolling unless needed
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
