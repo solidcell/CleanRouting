@@ -3,7 +3,7 @@ import UIKit
 class SignupCredentialsViewController: ActionListViewController {
 
     private let usage: Usage
-    private let interactor: SignupCredentialsInteractor
+    private let coordinator: SignupCredentialsCoordinator
     private static let titleText = "Signup Credentials"
 
     enum Usage {
@@ -11,8 +11,8 @@ class SignupCredentialsViewController: ActionListViewController {
         case pushed(nextButton: String)
     }
 
-    init(interactor: SignupCredentialsInteractor, usage: Usage) {
-        self.interactor = interactor
+    init(coordinator: SignupCredentialsCoordinator, usage: Usage) {
+        self.coordinator = coordinator
         self.usage = usage
         let actions = [
             Action(name: "Next", selector: #selector(didTapNext))
@@ -36,7 +36,8 @@ class SignupCredentialsViewController: ActionListViewController {
     }
 
     @objc private func didTapNext() {
-        interactor.didTapNext()
+        UserStore.loggedIn = true
+        coordinator.didTapNext()
     }
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

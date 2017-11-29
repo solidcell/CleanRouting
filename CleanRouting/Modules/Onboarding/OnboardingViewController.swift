@@ -2,10 +2,10 @@ import UIKit
 
 class OnboardingViewController: ActionListViewController {
 
-    private let interactor: OnboardingInteractor
+    private let coordinator: OnboardingCoordinator
 
-    init(interactor: OnboardingInteractor) {
-        self.interactor = interactor
+    init(coordinator: OnboardingCoordinator) {
+        self.coordinator = coordinator
         let actions = [
             Action(name: "Log In", selector: #selector(didTapLogIn)),
             Action(name: "Sign Up", selector: #selector(didTapSignUp)),
@@ -15,15 +15,15 @@ class OnboardingViewController: ActionListViewController {
     }
 
     @objc func didTapLogIn() {
-        interactor.didTapLogIn()
+        coordinator.didTapLogIn()
     }
 
     @objc func didTapSignUp() {
-        interactor.didTapSignUp()
+        coordinator.didTapSignUp()
     }
 
     @objc func didTapSkipToMap() {
-        interactor.didTapSkipToMap()
+        coordinator.didTapSkipToMap()
     }
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

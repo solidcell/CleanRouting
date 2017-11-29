@@ -10,8 +10,7 @@ class LoginCoordinator {
     }
 
     func start() -> UIViewController {
-        let interactor = LoginInteractor(coordinator: self)
-        let viewController = LoginViewController(interactor: interactor)
+        let viewController = LoginViewController(coordinator: self)
         self.viewController = viewController
         return viewController
     }

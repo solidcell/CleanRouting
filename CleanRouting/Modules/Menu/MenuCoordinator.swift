@@ -10,8 +10,7 @@ class MenuCoordinator: LoginCoordinatorDelegate, SignupCoordinatorDelegate {
     }
 
     func start() -> UIViewController {
-        let interactor = MenuInteractor(coordinator: self)
-        let viewController = MenuViewController(interactor: interactor, loggedIn: UserStore.loggedIn)
+        let viewController = MenuViewController(coordinator: self, loggedIn: UserStore.loggedIn)
         self.viewController = viewController
         return viewController
     }
@@ -20,7 +19,7 @@ class MenuCoordinator: LoginCoordinatorDelegate, SignupCoordinatorDelegate {
         delegate.didTapCloseInMenu()
     }
 
-    func didTapLogOut() {
+    func didLogOut() {
         delegate.didTapLogOutInMenu()
     }
 

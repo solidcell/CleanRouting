@@ -2,12 +2,12 @@ import UIKit
 
 class SignupPaymentViewController: ActionListViewController {
 
-    private let interactor: SignupPaymentInteractor
+    private let coordinator: SignupPaymentCoordinator
     private let usage: Usage
     private static let titleText = "Signup Payment"
 
-    init(interactor: SignupPaymentInteractor, usage: Usage) {
-        self.interactor = interactor
+    init(coordinator: SignupPaymentCoordinator, usage: Usage) {
+        self.coordinator = coordinator
         self.usage = usage
         let actions = [
             Action(name: "Next", selector: #selector(didTapNext))
@@ -36,7 +36,7 @@ class SignupPaymentViewController: ActionListViewController {
     }
 
     @objc private func didTapNext() {
-        interactor.didTapNext(on: self)
+        coordinator.didTapNext(on: self)
     }
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

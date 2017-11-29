@@ -9,8 +9,7 @@ class SignupPaymentCoordinator {
     }
 
     func start(usage: SignupPaymentViewController.Usage) -> UIViewController {
-        let interactor = SignupPaymentInteractor(coordinator: self)
-        let viewController = SignupPaymentViewController(interactor: interactor, usage: usage)
+        let viewController = SignupPaymentViewController(coordinator: self, usage: usage)
         return viewController
     }
 

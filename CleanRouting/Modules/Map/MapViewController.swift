@@ -2,10 +2,10 @@ import UIKit
 
 class MapViewController: ActionListViewController {
 
-    let interactor: MapInteractor
+    private let coordinator: MapCoordinator
 
-    init(interactor: MapInteractor) {
-        self.interactor = interactor
+    init(coordinator: MapCoordinator) {
+        self.coordinator = coordinator
         let actions = [
             Action(name: "Menu", selector: #selector(didTapMenu))
         ]
@@ -13,7 +13,7 @@ class MapViewController: ActionListViewController {
     }
 
     @objc func didTapMenu() {
-        interactor.didTapMenu()
+        coordinator.didTapMenu()
     }
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

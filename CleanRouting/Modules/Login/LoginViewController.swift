@@ -2,10 +2,10 @@ import UIKit
 
 class LoginViewController: ActionListViewController {
 
-    private let interactor: LoginInteractor
+    private let coordinator: LoginCoordinator
 
-    init(interactor: LoginInteractor) {
-        self.interactor = interactor
+    init(coordinator: LoginCoordinator) {
+        self.coordinator = coordinator
         let actions = [
             Action(name: "Simulate Successful Login", selector: #selector(didTapSuccessButton)),
             Action(name: "Cancel", selector: #selector(didTapCancelButton))
@@ -14,11 +14,12 @@ class LoginViewController: ActionListViewController {
     }
 
     @objc private func didTapCancelButton() {
-        interactor.didTapCancelButton()
+        coordinator.didCancelLogIn()
     }
 
     @objc private func didTapSuccessButton() {
-        interactor.didTapLoginButton()
+        UserStore.loggedIn = true
+        coordinator.didLogIn()
     }
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }

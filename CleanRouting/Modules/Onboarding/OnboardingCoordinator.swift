@@ -10,8 +10,7 @@ class OnboardingCoordinator: LoginCoordinatorDelegate, SignupCoordinatorDelegate
     }
 
     func start() -> UIViewController {
-        let interactor = OnboardingInteractor(coordinator: self)
-        let viewController = OnboardingViewController(interactor: interactor)
+        let viewController = OnboardingViewController(coordinator: self)
         self.viewController = viewController
         return viewController
     }

@@ -9,8 +9,7 @@ class SignupCredentialsCoordinator {
     }
 
     func start(usage: SignupCredentialsViewController.Usage) -> UIViewController {
-        let interactor = SignupCredentialsInteractor(coordinator: self)
-        let viewController = SignupCredentialsViewController(interactor: interactor, usage: usage)
+        let viewController = SignupCredentialsViewController(coordinator: self, usage: usage)
         return viewController
     }
 

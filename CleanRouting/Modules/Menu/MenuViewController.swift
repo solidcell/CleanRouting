@@ -2,10 +2,10 @@ import UIKit
 
 class MenuViewController: ActionListViewController {
 
-    let interactor: MenuInteractor
+    private let coordinator: MenuCoordinator
 
-    init(interactor: MenuInteractor, loggedIn: Bool) {
-        self.interactor = interactor
+    init(coordinator: MenuCoordinator, loggedIn: Bool) {
+        self.coordinator = coordinator
         let loggedInStateActions = loggedIn
             ? [Action(name: "Log Out", selector: #selector(didTapLogOut))]
             : [
@@ -19,19 +19,20 @@ class MenuViewController: ActionListViewController {
     }
 
     @objc func didTapClose() {
-        interactor.didTapClose()
+        coordinator.didTapClose()
     }
 
     @objc func didTapLogOut() {
-        interactor.didTapLogOut()
+        UserStore.loggedIn = false
+        coordinator.didLogOut()
     }
 
     @objc func didTapLogIn() {
-        interactor.didTapLogIn()
+        coordinator.didTapLogIn()
     }
 
     @objc func didTapSignUp() {
-        interactor.didTapSignUp()
+        coordinator.didTapSignUp()
     }
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
